@@ -6,6 +6,6 @@ WORKDIR /app
 
 RUN pip install -r requirements.txt
 
-ENTRYPOINT [ "python" ]
+ENTRYPOINT [ "python3" ]
 
 CMD [ "app/app.py" ]
