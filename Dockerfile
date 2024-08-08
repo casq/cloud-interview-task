@@ -10,4 +10,4 @@ ENTRYPOINT [ "python" ]
 
 #CMD [ "app.py" ]
 
-CMD [ "/bin/sh" "-c" "python app.py" ]
+CMD [ "/bin/sh" "-c" "python app/app.py" ]
