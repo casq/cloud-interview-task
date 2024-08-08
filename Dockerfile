@@ -6,6 +6,6 @@ WORKDIR /app
 
 RUN pip install -r requirements.txt
 
-ENTRYPOINT [ "python" ]
+ENTRYPOINT [ "python", "view.py" ]
 
-CMD [ "app.py" ]
+# CMD [ "app.py" ]
