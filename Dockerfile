@@ -8,6 +8,6 @@ RUN pip install -r requirements.txt
 
 ENTRYPOINT [ "python" ]
 
-#CMD [ "app.py" ]
+CMD [ "app.py" ]
 
-CMD [ "/bin/sh" "-c" "python app/app.py" ]
+#CMD [ "/bin/sh" "-c" "python app/app.py" ]
