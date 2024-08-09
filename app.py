@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 import os
 
-app = Flask(__name__, template_folder='/home/mungbean90/cloud-interview-task/templates')
+app = Flask(__name__, template_folder='/home/mungbean90/cloud-interview-task/templates/')
 
 
 @app.route('/')
