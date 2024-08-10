@@ -4,11 +4,12 @@ COPY ./requirements.txt /app/requirements.txt
 
 WORKDIR /app
 
-COPY . /app
+COPY . .
 
 RUN pip install -r requirements.txt
 
-RUN ls /app;
+RUN ls /
+RUN ls /app
 RUN ls /app/templates
 
 EXPOSE 3000
