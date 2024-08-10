@@ -2,7 +2,7 @@ from flask import Flask, render_template
 import os
 
 app = Flask(__name__)
-
+app.config['EXPLAIN_TEMPLATE_LOADING'] = True
 
 @app.route('/')
 def home():
