@@ -8,9 +8,9 @@ COPY . .
 
 RUN pip install -r requirements.txt
 
-RUN ls /
 RUN ls /app
 RUN ls /app/templates
+RUN cat /app/templates/index.htm
 
 EXPOSE 3000
 
