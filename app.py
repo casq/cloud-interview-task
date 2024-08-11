@@ -8,7 +8,7 @@ env = Environment(loader=PackageLoader('app', templates'))
 
 @app.route('/')
 def home():
-  return render_template('/app/templates/index.htm')
+  return render_template('index.htm')
 
 
 if __name__ == "__main__":
