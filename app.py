@@ -1,7 +1,10 @@
 from flask import Flask, render_template
+from jinja2 import Environment, PackageLoader
 import os
 
 app = Flask(__name__)
+
+env = Environment(loader=PackageLoader('cloud-interview-task', templates'))
 
 @app.route('/')
 def home():
