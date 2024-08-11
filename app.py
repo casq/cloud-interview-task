@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 
-env = Environment(loader=PackageLoader('app', templates'))
+env = Environment(loader=PackageLoader('app', 'templates'))
 
 @app.route('/')
 def home():
