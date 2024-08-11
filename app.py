@@ -4,7 +4,8 @@ import os
 
 @app.route('/')
 def home():
-  return render_template('index.htm')
+  return "hello world"
+  # return render_template('index.htm')
 
 if __name__ == "__main__":
   port = int(os.environ.get('PORT', 3000))
