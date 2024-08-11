@@ -10,7 +10,7 @@ RUN pip install -r requirements.txt
 
 RUN ls /app
 RUN ls /app/templates
-RUN cat /app/templates/index.htm
+RUN cat /app/app.py
 
 EXPOSE 3000
 
