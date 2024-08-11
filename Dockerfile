@@ -8,10 +8,6 @@ COPY . .
 
 RUN pip install -r requirements.txt
 
-RUN ls /app
-RUN ls /app/templates
-RUN cat /app/app.py
-
 EXPOSE 3000
 
 ENTRYPOINT [ "python" ]
