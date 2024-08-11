@@ -1,14 +1,15 @@
 from flask import Flask, render_template
-from jinja2 import Environment, PackageLoader
+import jinja2
 import os
 
-app = Flask(__name__)
-
-env = Environment(loader=PackageLoader('app', 'templates'))
+templateLoader = jinja2.FileSystemLoader(searchpath="./")
+templateEnv = jinja2.Environment(loader=templateLoader)
+TEMPLATE_FILE = "index.htm"
+template = templateEnv.get_template(TEMPLATE_FILE)
 
 @app.route('/')
 def home():
-  return render_template('index.htm')
+  return render_template(template)
 
 
 if __name__ == "__main__":
