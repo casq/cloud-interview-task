@@ -2,7 +2,7 @@ from flask import Flask, render_template
 import jinja2
 import os
 
-templateLoader = jinja2.FileSystemLoader(searchpath="./")
+templateLoader = jinja2.FileSystemLoader(searchpath="./templates")
 templateEnv = jinja2.Environment(loader=templateLoader)
 TEMPLATE_FILE = "index.htm"
 template = templateEnv.get_template(TEMPLATE_FILE)
