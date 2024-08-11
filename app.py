@@ -1,16 +1,10 @@
 from flask import Flask, render_template
-import jinja2
-import os
 
-templateLoader = jinja2.FileSystemLoader(searchpath="./templates")
-templateEnv = jinja2.Environment(loader=templateLoader)
-TEMPLATE_FILE = "index.htm"
-template = templateEnv.get_template(TEMPLATE_FILE)
+import os
 
 @app.route('/')
 def home():
-  return render_template(template)
-
+  return render_template('index.htm')
 
 if __name__ == "__main__":
   port = int(os.environ.get('PORT', 3000))
